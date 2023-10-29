@@ -277,11 +277,14 @@ function changeBackgroundColor() {
   const currentHour = now.getHours();
 
   const topContainer = document.getElementById("top-container");
+  const downContainer = document.getElementById("container");
 
   if (currentHour >= 6 && currentHour < 18) {
     topContainer.style.backgroundImage = 'linear-gradient(pink, lightblue)';
+    downContainer.style.backgroundColor = '#7eafce';
   } else {
     topContainer.style.backgroundImage = 'linear-gradient(#14213d, #b8c0ff)';
+    downContainer.style.backgroundColor = '#2e5a75';
   }
 }
 
